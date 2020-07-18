@@ -1,4 +1,5 @@
-const Discord = require('discord.js')
+import { token } from './keys';
+const Discord = require('discord.js');
 const client=new Discord.Client();
 
 const keyword = '%';
@@ -13,4 +14,4 @@ client.on('message', function(msg){
     }
 });
 
-client.login('NzM0MTg2NzAyNDAyMzU1MjEw.XxOC3w.VrEZK-tiIhbpQI3c79RV59ibPPE');
+client.login(token);
